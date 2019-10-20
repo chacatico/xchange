@@ -1,0 +1,12 @@
+<div class="exchange-rate-calculate">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <input class="exchange-input" placeholder="EUR" type="text" currencyMask [(ngModel)]="eurAmount" [options]="{ prefix: '$ ', thousands: ',', decimal: '.', precision: '4' }">
+
+            <input class="exchange-input" placeholder="USD" type="text" currencyMask disabled [(ngModel)]="usdExchange" [options]="{ prefix: '$ ', thousands: ',', decimal: '.', precision: '4' }">
+        </div>
+        <div class="col-md-12 text-center">
+            <button class="exchange-button" class="btn" (click)="exchange_rate()">CALCULATE</button>
+        </div>
+    </div>
+</div>
